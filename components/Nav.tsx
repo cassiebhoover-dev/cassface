@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
@@ -46,12 +47,12 @@ export default function Nav() {
           >
             Contact
           </a>
-          <a
-            href="#contact"
-            className="text-sm border border-foreground px-4 py-1.5 rounded-full hover:bg-foreground hover:text-background transition-all duration-200 sm:hidden"
+          <Link
+            href="/resume"
+            className="text-sm border border-foreground px-4 py-1.5 rounded-full hover:bg-foreground hover:text-background transition-all duration-200"
           >
-            Contact
-          </a>
+            Resume
+          </Link>
         </div>
       </div>
     </nav>

@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const skills = [
   'Figma',
   'Prototyping',
@@ -11,11 +13,15 @@ export default function About() {
     <section id="about" className="py-24 md:py-32 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
-          {/* Photo placeholder */}
-          <div className="relative">
-            <div className="bg-stone-200 aspect-square rounded-2xl flex items-center justify-center">
-              <span className="text-sm text-muted font-sans tracking-wide">Photo</span>
-            </div>
+          {/* Headshot */}
+          <div className="relative aspect-square rounded-2xl overflow-hidden bg-stone-200">
+            <Image
+              src="/images/Cassie-Hoover-headshot.jpeg"
+              alt="Cassie Hoover"
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
           </div>
 
           {/* Content */}
@@ -31,7 +37,7 @@ export default function About() {
 
             <div className="space-y-4 font-sans text-muted leading-relaxed mb-8">
               <p>
-                I&apos;m a Senior Product Designer focused on the intersection of user research, systems thinking, and shipping products that actually make a difference. I believe great design is invisible — it just works.
+                I&apos;m a Senior Product Designer & Design Lead focused on the intersection of user research, systems thinking, and shipping products that actually make a difference. I believe great design is invisible — it just works.
               </p>
               <p>
                 Over the past 8+ years, I&apos;ve partnered with product managers, engineers, and executives to take ideas from whiteboard sketches to polished, scalable products. Whether I&apos;m running discovery research or sweating the details of a component library, I care deeply about the craft.
