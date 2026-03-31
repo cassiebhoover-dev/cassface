@@ -68,35 +68,49 @@ PERSONALITY & WORKING STYLE
 Cassie is approachable, collaborative, and relationship-driven. She believes enjoying the people you work with is as important as the work itself. She brings both strategic thinking and deep craft to everything she does.`
 
 export async function POST(req: Request) {
-  const { messages } = await req.json()
+  try {
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return new Response('API key not configured', { status: 500 })
+    }
 
-  const stream = await client.messages.stream({
-    model: 'claude-3-5-sonnet-20241022',
-    max_tokens: 500,
-    system: SYSTEM_PROMPT,
-    messages,
-  })
+    const { messages } = await req.json()
 
-  const encoder = new TextEncoder()
+    const stream = await client.messages.stream({
+      model: 'claude-3-5-sonnet-20241022',
+      max_tokens: 500,
+      system: SYSTEM_PROMPT,
+      messages,
+    })
 
-  const readable = new ReadableStream({
-    async start(controller) {
-      for await (const chunk of stream) {
-        if (
-          chunk.type === 'content_block_delta' &&
-          chunk.delta.type === 'text_delta'
-        ) {
-          controller.enqueue(encoder.encode(chunk.delta.text))
+    const encoder = new TextEncoder()
+
+    const readable = new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const chunk of stream) {
+            if (
+              chunk.type === 'content_block_delta' &&
+              chunk.delta.type === 'text_delta'
+            ) {
+              controller.enqueue(encoder.encode(chunk.delta.text))
+            }
+          }
+        } catch (err) {
+          controller.error(err)
+        } finally {
+          controller.close()
         }
-      }
-      controller.close()
-    },
-  })
+      },
+    })
 
-  return new Response(readable, {
-    headers: {
-      'Content-Type': 'text/plain; charset=utf-8',
-      'Transfer-Encoding': 'chunked',
-    },
-  })
+    return new Response(readable, {
+      headers: {
+        'Content-Type': 'text/plain; charset=utf-8',
+        'Transfer-Encoding': 'chunked',
+      },
+    })
+  } catch (err) {
+    console.error('Chat API error:', err)
+    return new Response('Internal server error', { status: 500 })
+  }
 }
