@@ -14,120 +14,116 @@ export default function EventAssistantApp() {
       <main className="pt-32 pb-24 px-6">
         <div className="max-w-3xl mx-auto">
 
-          {/* Back */}
-          <Link
-            href="/#work"
-            className="inline-flex items-center text-sm font-sans text-muted hover:text-foreground transition-colors duration-200 mb-12"
-          >
+          <Link href="/#work" className="inline-flex items-center text-sm font-sans text-muted hover:text-foreground transition-colors duration-200 mb-12">
             ← Back to work
           </Link>
 
-          {/* Header */}
-          <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">
-            Mobile App · Events.com
-          </p>
+          <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">Mobile App · Events.com</p>
           <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
             Event Assistant App
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
-            A mobile app that helped event organizers efficiently check in attendees — designed for speed, minimal training, and stressed day-of volunteers. Launched on Google Play and featured in TechCrunch.
+            A mobile check-in app built for speed, minimal training, and the reality of event day — launched on Google Play and featured in TechCrunch.
           </p>
 
           <div className="border-t border-stone-200 mb-16" />
 
-          {/* Meta */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Role</p>
-              <p className="text-sm font-sans text-foreground">Lead Designer</p>
+          {/* Impact */}
+          <section className="mb-16">
+            <p className="text-xs font-sans text-accent tracking-widest uppercase mb-6">Impact</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {[
+                { stat: 'Launched', label: 'Successfully shipped on the Google Play Store' },
+                { stat: 'TechCrunch', label: 'Featured in TechCrunch as a notable event technology product' },
+                { stat: '5 Orgs', label: 'Interviewed across event categories from marathons to corporate conferences' },
+              ].map((item) => (
+                <div key={item.stat} className="bg-stone-50 rounded-2xl p-6">
+                  <p className="font-serif text-4xl text-foreground mb-2">{item.stat}</p>
+                  <p className="text-sm font-sans text-muted leading-relaxed">{item.label}</p>
+                </div>
+              ))}
             </div>
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Deliverables</p>
-              <p className="text-sm font-sans text-foreground">IA, User Flows, UX, Prototyping, Style Guides, Visual Design</p>
-            </div>
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Company</p>
-              <p className="text-sm font-sans text-foreground">Events.com</p>
-            </div>
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Platform</p>
-              <p className="text-sm font-sans text-foreground">Android (Google Play)</p>
-            </div>
-          </div>
+          </section>
 
-          {/* Hero image */}
-          <div className="relative aspect-video rounded-2xl mb-20 overflow-hidden bg-stone-100">
+          <div className="relative aspect-video rounded-2xl mb-16 overflow-hidden bg-stone-100">
             <Image src="/images/event-assistant-app.jpg" alt="Event Assistant App" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
           </div>
 
-          {/* Problem */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            {[
+              { label: 'Role', value: 'Lead Designer' },
+              { label: 'Deliverables', value: 'IA, User Flows, UX, Prototyping, Style Guide, Visual Design' },
+              { label: 'Company', value: 'Events.com' },
+              { label: 'Platform', value: 'Android (Google Play)' },
+            ].map((m) => (
+              <div key={m.label}>
+                <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">{m.label}</p>
+                <p className="text-sm font-sans text-foreground">{m.value}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="border-t border-stone-200 mb-16" />
+
+          <section className="mb-16">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
+            <p className="font-sans text-base text-muted leading-relaxed mb-4">
+              Events.com's platform handled ticketing and registration, but check-in — the moment attendees actually arrive — was still painful. Long lines, stressed staff, and day-of volunteers with minimal training created a poor first impression for every event the platform powered.
+            </p>
+            <p className="font-sans text-base text-muted leading-relaxed">
+              A first-party check-in app extended Events.com's value from pre-event to day-of, and created a new competitive moat against point-solution check-in tools.
+            </p>
+          </section>
+
           <section className="mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              Event check-in is notoriously chaotic. Long queues, stressed organizers, and day-of volunteers with minimal training created a poor experience for both staff and attendees. Existing tools required too much setup time and too steep a learning curve for temporary helpers.
-            </p>
-            <p className="font-sans text-base text-muted leading-relaxed">
-              The solution needed to be fast to learn, resilient under pressure, and require minimal onboarding — because at 8am on event day, there's no time for a tutorial.
+              Existing tools required too much setup and had too steep a learning curve for temporary event-day volunteers. At 8am on event morning, there's no time for onboarding. The app needed to be immediately usable by someone who'd never seen it before — under pressure.
             </p>
           </section>
 
-          {/* Research */}
           <section className="mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              I interviewed staff at 5 different event organizations across a variety of event categories — from music festivals to corporate conferences. Sessions focused on the check-in workflow, pain points with existing tools, and what volunteers actually needed to do their jobs.
+              I interviewed staff at 5 event organizations across categories — music festivals, marathons, corporate conferences. I also conducted on-site trials at live events and led QA/UAT to test the app in real conditions, not just usability labs.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
-              Research findings shaped the information architecture and user flows. I also conducted on-site trials at live events and led QA/UAT activities to ensure the app held up in real conditions.
+              Key insight: volunteers didn't want features — they wanted confidence. The app needed to make the right action obvious at every step.
             </p>
           </section>
 
-          {/* Design Process */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Design Process</h2>
-            <p className="font-sans text-base text-muted leading-relaxed mb-8">
-              The initial prototype was designed for two user types: organizers and attendees. But testing revealed that the attendee-facing functionality was redundant — attendees just wanted to be checked in quickly, not use an app themselves.
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Key Design Decision: Cut the Attendee Flow</h2>
+            <p className="font-sans text-base text-muted leading-relaxed mb-4">
+              The initial prototype was designed for two user types: organizers/volunteers and attendees. Testing revealed the attendee-facing functionality was redundant — attendees wanted to be checked in quickly, not interact with an app themselves.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              I cut the prototype's screen count in half by eliminating the attendee flow entirely, then conducted additional validation testing to confirm the simplified experience was faster and easier for volunteers.
+              I cut the screen count in half by removing the attendee flow entirely. This is a case where the right answer was doing less — and research made that clear rather than gut instinct.
             </p>
-            <p className="font-sans text-base text-muted leading-relaxed">
-              This is a case where the right answer was to do less — and the research made that clear.
+            <p className="font-sans text-sm text-muted italic leading-relaxed">
+              I ran a second round of validation testing after the cut to confirm the simplified experience was faster and less error-prone under simulated event conditions.
             </p>
           </section>
 
-          {/* Outcomes */}
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes</h2>
-            <ul className="space-y-3 mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
+            <ul className="space-y-3">
               {[
-                'Successfully launched on the Google Play Store',
-                'Featured in a TechCrunch article covering event technology',
-                'Post-launch iterations added in-app statistics for organizers to track check-in performance in real time',
-                'Volunteer onboarding guides were added to the app, reducing the training burden before event day',
+                'Launched on the Google Play Store and adopted across Events.com\'s customer base',
+                'Featured in TechCrunch as a noteworthy event technology product',
+                'Post-launch iterations added in-app statistics so organizers could track check-in performance in real time',
+                'Volunteer onboarding guides added to the app, reducing the training burden before event day',
               ].map((item) => (
                 <li key={item} className="flex gap-3 font-sans text-base text-muted leading-relaxed">
-                  <span className="text-accent mt-1 shrink-0">—</span>
-                  <span>{item}</span>
+                  <span className="text-accent mt-1 shrink-0">—</span><span>{item}</span>
                 </li>
               ))}
             </ul>
           </section>
 
-          {/* Nav between projects */}
           <div className="border-t border-stone-200 pt-12 flex justify-between items-center">
-            <Link
-              href="/work/event-home-page"
-              className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200"
-            >
-              ← Event Home Page
-            </Link>
-            <Link
-              href="/#work"
-              className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200"
-            >
-              All work ↑
-            </Link>
+            <Link href="/work/event-home-page" className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200">← Event Home Page</Link>
+            <Link href="/#work" className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200">All work ↑</Link>
           </div>
 
         </div>

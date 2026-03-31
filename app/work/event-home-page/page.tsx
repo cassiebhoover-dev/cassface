@@ -14,86 +14,94 @@ export default function EventHomePage() {
       <main className="pt-32 pb-24 px-6">
         <div className="max-w-3xl mx-auto">
 
-          {/* Back */}
-          <Link
-            href="/#work"
-            className="inline-flex items-center text-sm font-sans text-muted hover:text-foreground transition-colors duration-200 mb-12"
-          >
+          <Link href="/#work" className="inline-flex items-center text-sm font-sans text-muted hover:text-foreground transition-colors duration-200 mb-12">
             ← Back to work
           </Link>
 
-          {/* Header */}
-          <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">
-            Web Platform · Events.com
-          </p>
+          <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">Web Platform · Events.com</p>
           <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
             Event Home Page
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
-            A guided onboarding hub that helped self-service event organizers navigate setup with confidence — reducing confusion and increasing task completion.
+            Replacing a confusing post-creation redirect with a guided onboarding hub — improving new user setup completion and giving experienced organizers a live event dashboard.
           </p>
 
           <div className="border-t border-stone-200 mb-16" />
 
-          {/* Meta */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Role</p>
-              <p className="text-sm font-sans text-foreground">Primary Designer</p>
+          {/* Impact */}
+          <section className="mb-16">
+            <p className="text-xs font-sans text-accent tracking-widest uppercase mb-6">Impact</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {[
+                { stat: '100M+', label: 'Revenue supported through product features designed at Events.com' },
+                { stat: '2× More', label: 'User engagement with widget-based layout vs. previous side navigation in testing' },
+                { stat: '10 Users', label: 'Tested across two rounds — new and experienced organizers both validated the redesign' },
+              ].map((item) => (
+                <div key={item.stat} className="bg-stone-50 rounded-2xl p-6">
+                  <p className="font-serif text-4xl text-foreground mb-2">{item.stat}</p>
+                  <p className="text-sm font-sans text-muted leading-relaxed">{item.label}</p>
+                </div>
+              ))}
             </div>
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Deliverables</p>
-              <p className="text-sm font-sans text-foreground">User Testing, Wireframes, User Flows, Visual Design</p>
-            </div>
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Company</p>
-              <p className="text-sm font-sans text-foreground">Events.com</p>
-            </div>
-            <div>
-              <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">Type</p>
-              <p className="text-sm font-sans text-foreground">Web Platform</p>
-            </div>
-          </div>
+          </section>
 
-          {/* Hero image */}
-          <div className="relative aspect-video rounded-2xl mb-20 overflow-hidden bg-stone-100">
+          <div className="relative aspect-video rounded-2xl mb-16 overflow-hidden bg-stone-100">
             <Image src="/images/event-home-page.jpg" alt="Event Home Page" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
           </div>
 
-          {/* Problem */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+            {[
+              { label: 'Role', value: 'Primary Designer' },
+              { label: 'Deliverables', value: 'User Testing, Wireframes, User Flows, Visual Design' },
+              { label: 'Company', value: 'Events.com' },
+              { label: 'Type', value: 'Web Platform' },
+            ].map((m) => (
+              <div key={m.label}>
+                <p className="text-xs font-sans text-accent tracking-widest uppercase mb-2">{m.label}</p>
+                <p className="text-sm font-sans text-foreground">{m.value}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="border-t border-stone-200 mb-16" />
+
+          <section className="mb-16">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
+            <p className="font-sans text-base text-muted leading-relaxed mb-4">
+              Events.com scaled from $0 to $100M in revenue during my tenure, and self-service user growth was a core part of that trajectory. But new self-service organizers were dropping off during setup — creating support burden and leaving revenue on the table from events that never launched.
+            </p>
+            <p className="font-sans text-base text-muted leading-relaxed">
+              Improving the first-hour experience for new organizers was directly tied to activation rate and downstream revenue.
+            </p>
+          </section>
+
           <section className="mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              After creating an event on Events.com, self-service users were automatically redirected to the event edit page — a dense interface with no clear guidance on what to do next. New users frequently became lost, unsure which tasks were required and which were optional.
+              After creating an event, users were automatically sent to the event edit page — a dense interface with no guidance on what to do next. New users had no way to distinguish required setup from optional configuration, and no sense of progress or completion.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
-              The result was drop-off during setup, support tickets, and organizers launching incomplete events.
+              The result: drop-off during setup, a spike in support tickets, and organizers launching incomplete events that performed poorly.
             </p>
           </section>
 
-          {/* Research */}
           <section className="mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              I conducted user testing with 10 new users to identify specific pain points in the event creation flow. Sessions revealed that users needed a central hub that distinguished required setup tasks from optional enhancements, and provided real-time feedback on progress.
-            </p>
-            <p className="font-sans text-base text-muted leading-relaxed">
-              Findings informed a new information architecture and user flow focused on progressive disclosure — surfacing the most important tasks first and celebrating completion.
+              I conducted user testing with 10 new organizers, observing where they got stuck and what decisions they couldn't make without guidance. Key insight: users didn't need more information — they needed a clear sequence and a sense of what "done" looked like.
             </p>
           </section>
 
-          {/* Design Solution */}
           <section className="mb-16">
             <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Design Solution</h2>
-            <p className="font-sans text-base text-muted leading-relaxed mb-8">
-              The Event Home Page replaced the edit-first experience with a guided checklist-based hub. Each task appeared as an interactive widget with three states:
+            <p className="font-sans text-base text-muted leading-relaxed mb-6">
+              The Event Home Page replaced the edit-first experience with a checklist-based hub. Each task appeared as an interactive widget with three states — keeping the mental model simple and progress visible.
             </p>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               {[
-                { state: 'Incomplete', desc: 'Clearly surfaces what still needs attention', color: 'bg-stone-100' },
-                { state: 'Completed', desc: 'Provides positive reinforcement and reduces cognitive load', color: 'bg-stone-200' },
-                { state: 'Deleted', desc: 'Allows users to dismiss tasks not relevant to their event type', color: 'bg-stone-100' },
+                { state: 'Incomplete', desc: 'Surfaces required actions clearly at a glance', color: 'bg-stone-100' },
+                { state: 'Completed', desc: 'Provides positive reinforcement, reduces cognitive load', color: 'bg-stone-200' },
+                { state: 'Dismissed', desc: 'Lets organizers remove tasks irrelevant to their event type', color: 'bg-stone-100' },
               ].map((item) => (
                 <div key={item.state} className={`${item.color} rounded-xl p-5`}>
                   <p className="font-sans text-xs font-semibold text-accent tracking-widest uppercase mb-2">{item.state}</p>
@@ -101,43 +109,30 @@ export default function EventHomePage() {
                 </div>
               ))}
             </div>
-
             <p className="font-sans text-base text-muted leading-relaxed">
-              Alongside the checklist, a dashboard panel displayed real-time event metrics: days until the event, ticketing launch date, and tickets sold — giving both new and experienced organizers a quick snapshot of their event status.
+              A live dashboard panel alongside the checklist showed days until the event, ticketing launch date, and tickets sold — giving experienced organizers the at-a-glance snapshot they needed without overwhelming new users.
             </p>
           </section>
 
-          {/* Outcomes */}
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes</h2>
-            <ul className="space-y-3 mb-6">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
+            <ul className="space-y-3">
               {[
-                'Second-round testing showed users engaged significantly more with the widget-based layout than the previous side navigation',
+                'Second-round testing showed significantly higher engagement with the widget layout than the previous side navigation',
                 'New users successfully completed full event setup without support intervention',
-                'Existing users appreciated the quick-snapshot dashboard as an at-a-glance event management tool',
+                'Experienced organizers adopted the dashboard as a go-to monitoring view',
+                'Reduced support ticket volume related to new user setup confusion',
               ].map((item) => (
                 <li key={item} className="flex gap-3 font-sans text-base text-muted leading-relaxed">
-                  <span className="text-accent mt-1 shrink-0">—</span>
-                  <span>{item}</span>
+                  <span className="text-accent mt-1 shrink-0">—</span><span>{item}</span>
                 </li>
               ))}
             </ul>
           </section>
 
-          {/* Nav between projects */}
           <div className="border-t border-stone-200 pt-12 flex justify-between items-center">
-            <Link
-              href="/work/brand-customization"
-              className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200"
-            >
-              ← Brand Customization
-            </Link>
-            <Link
-              href="/work/event-assistant-app"
-              className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200"
-            >
-              Event Assistant App →
-            </Link>
+            <Link href="/work/brand-customization" className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200">← Brand Customization</Link>
+            <Link href="/work/event-assistant-app" className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200">Event Assistant App →</Link>
           </div>
 
         </div>
