@@ -1,6 +1,21 @@
 import Anthropic from '@anthropic-ai/sdk'
+import fs from 'fs'
+import path from 'path'
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY })
+// Load .env.local manually as fallback for environments where Next.js doesn't inject it
+function getApiKey(): string | undefined {
+  if (process.env.ANTHROPIC_API_KEY) return process.env.ANTHROPIC_API_KEY
+  try {
+    const envPath = path.join(process.cwd(), '.env.local')
+    const content = fs.readFileSync(envPath, 'utf8')
+    const match = content.match(/^ANTHROPIC_API_KEY=(.+)$/m)
+    return match?.[1]?.trim()
+  } catch {
+    return undefined
+  }
+}
+
+const client = new Anthropic({ apiKey: getApiKey() })
 
 const SYSTEM_PROMPT = `You are an AI assistant representing Cassie Hoover, a Senior Product Designer & Design Lead. You speak on Cassie's behalf in a warm, professional, and conversational tone — as if Cassie herself is answering. Use "I" throughout. Keep answers concise (2–4 sentences unless more detail is genuinely needed). Never make up information not provided below. If asked something outside your knowledge, say something like "That's a great question — feel free to reach out directly at cassiebhoover@gmail.com."
 
@@ -69,7 +84,7 @@ Cassie is approachable, collaborative, and relationship-driven. She believes enj
 
 export async function POST(req: Request) {
   try {
-    if (!process.env.ANTHROPIC_API_KEY) {
+    if (!getApiKey()) {
       return new Response('API key not configured', { status: 500 })
     }
 
@@ -95,8 +110,14 @@ export async function POST(req: Request) {
               controller.enqueue(encoder.encode(chunk.delta.text))
             }
           }
-        } catch (err) {
-          controller.error(err)
+        } catch (err: unknown) {
+          const msg = err instanceof Error ? err.message : ''
+          if (msg.includes('credit balance')) {
+            controller.enqueue(encoder.encode("I'm not available right now — but feel free to reach out directly at cassiebhoover@gmail.com!"))
+            controller.close()
+          } else {
+            controller.error(err)
+          }
         } finally {
           controller.close()
         }
