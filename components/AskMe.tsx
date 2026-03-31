@@ -51,6 +51,7 @@ export default function AskMe() {
         body: JSON.stringify({ messages: updatedMessages }),
       })
 
+      if (!res.ok) throw new Error(`Server error: ${res.status}`)
       if (!res.body) throw new Error('No response body')
 
       const reader = res.body.getReader()

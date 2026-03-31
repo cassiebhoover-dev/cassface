@@ -71,7 +71,7 @@ export async function POST(req: Request) {
   const { messages } = await req.json()
 
   const stream = await client.messages.stream({
-    model: 'claude-opus-4-5',
+    model: 'claude-3-5-sonnet-20241022',
     max_tokens: 500,
     system: SYSTEM_PROMPT,
     messages,
