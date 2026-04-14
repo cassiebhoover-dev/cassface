@@ -46,7 +46,7 @@ export default function AutomatedReviews() {
           </section>
 
           <div className="relative aspect-video rounded-2xl mb-16 overflow-hidden bg-stone-100">
-            <Image src="/images/automated-reviews.jpg" alt="Automated Reviews" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
+            <Image src="/images/Image1-banner.jpg" alt="Automated Reviews — relationship monitoring dashboard" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
           </div>
 
           {/* Meta */}
@@ -106,6 +106,17 @@ export default function AutomatedReviews() {
                 </div>
               ))}
             </div>
+
+            {/* Research artifacts */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-stone-100">
+                <Image src="/images/Image3-research.jpg" alt="Interview synthesis — tagged insights from customer research sessions" fill className="object-cover" sizes="(max-width: 768px) 100vw, 384px" />
+              </div>
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-stone-100">
+                <Image src="/images/Image4-researchgraph.jpg" alt="Research themes — donut chart showing pain points, journey phases, and needs" fill className="object-cover" sizes="(max-width: 768px) 100vw, 384px" />
+              </div>
+            </div>
+            <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">Interview synthesis and research theme analysis from Dovetail</p>
           </section>
 
           {/* Strategic reframe */}
@@ -117,6 +128,12 @@ export default function AutomatedReviews() {
             <p className="font-sans text-base text-muted leading-relaxed">
               This reframe changed the information architecture, the hierarchy of what data was surfaced, and how the system communicated confidence levels to reviewers.
             </p>
+
+            {/* Wireframes */}
+            <div className="relative aspect-[16/10] rounded-2xl mt-10 overflow-hidden bg-stone-100">
+              <Image src="/images/Image2-wireframes.jpg" alt="Wireframe iterations and high-fidelity mockup for the monitoring tab" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
+            <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">Wireframe iterations exploring review states, progressing to high-fidelity design</p>
           </section>
 
           {/* Artifacts */}
@@ -134,6 +151,17 @@ export default function AutomatedReviews() {
                 </li>
               ))}
             </ul>
+
+            {/* User flows */}
+            <div className="space-y-4 mt-10">
+              <div className="relative aspect-[16/9] rounded-2xl overflow-hidden bg-stone-100">
+                <Image src="/images/Image6-userflows.jpg" alt="Individual FI user journey maps — persona-based workflows" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+              </div>
+              <div className="relative aspect-[16/7] rounded-2xl overflow-hidden bg-stone-100">
+                <Image src="/images/Image7-Userflows2.jpg" alt="Comprehensive feature journey — UI, nCino logic, integrations, and external data layers" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+              </div>
+              <p className="text-xs font-sans text-muted opacity-60 text-center">Persona journey maps and end-to-end system flow across UI, services, and external data</p>
+            </div>
           </section>
 
           {/* Outcomes */}
@@ -145,6 +173,26 @@ export default function AutomatedReviews() {
             <p className="font-sans text-base text-muted leading-relaxed">
               The reframed approach to trust and transparency became a foundational design principle applied across subsequent nCino automation features.
             </p>
+
+            {/* Next steps */}
+            <div className="relative aspect-[16/10] rounded-2xl mt-10 overflow-hidden bg-stone-100">
+              <Image src="/images/Image8-nextsteps.jpg" alt="Next steps — prioritized action items from research findings" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
+            <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">Prioritized next steps from research synthesis</p>
+          </section>
+
+          {/* Final result */}
+          <section className="mb-20">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Final Design</h2>
+            <p className="font-sans text-base text-muted leading-relaxed mb-6">
+              The shipped relationship monitoring dashboard — surfacing review details, risk insights, spreads, compliance monitoring, and automated recommendations in a single, trust-building view.
+            </p>
+            <div className="relative rounded-2xl overflow-hidden bg-stone-100 border border-stone-200">
+              <Image src="/images/Image9-result.jpg" alt="Final relationship monitoring dashboard — Port City Shipping Co." width={1200} height={3000} className="w-full h-auto" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
+            <div className="relative aspect-video rounded-2xl mt-4 overflow-hidden bg-stone-100 border border-stone-200">
+              <Image src="/images/Image1-banner.jpg" alt="Dashboard detail — review results and proactive risk insights" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
           </section>
 
           <div className="border-t border-stone-200 pt-12 flex justify-between items-center">

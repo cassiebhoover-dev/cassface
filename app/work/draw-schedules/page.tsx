@@ -46,7 +46,7 @@ export default function DrawSchedules() {
           </section>
 
           <div className="relative aspect-video rounded-2xl mb-16 overflow-hidden bg-stone-100">
-            <Image src="/images/draw-schedules.jpg" alt="Draw Schedules" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
+            <Image src="/images/DrawSchedules-banner.jpg" alt="Draw Schedules — construction loan draw management" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
@@ -90,6 +90,26 @@ export default function DrawSchedules() {
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               I conducted four 30-minute remote interviews with relationship managers, observing how they currently managed draw schedules outside of nCino. Sessions revealed the frequency of use, the complexity of typical draw structures, and the friction of context-switching between tools mid-workflow.
             </p>
+
+            <div className="relative aspect-[16/10] rounded-2xl mt-10 overflow-hidden bg-stone-100">
+              <Image src="/images/Drawschedules-research.jpg" alt="Research synthesis — interview insights and workflow mapping" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
+            <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">Research synthesis from relationship manager interviews</p>
+
+            <div className="relative aspect-[16/9] rounded-2xl mt-6 overflow-hidden bg-stone-100">
+              <Image src="/images/DrawSchedules-userjourney.jpg" alt="User journey map — draw schedule workflow across touchpoints" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
+            <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">User journey mapping for the draw schedule workflow</p>
+          </section>
+
+          <section className="mb-16">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Screen Map</h2>
+            <p className="font-sans text-base text-muted leading-relaxed mb-6">
+              A comprehensive screen map documenting the full draw schedule experience — from entry points through editing flows.
+            </p>
+            <div className="relative rounded-2xl overflow-hidden bg-stone-100 border border-stone-200">
+              <Image src="/images/Drawschedule-ScreenMap.jpg" alt="Screen map — complete draw schedule feature flow" width={1200} height={2000} className="w-full h-auto" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
           </section>
 
           <section className="mb-16">
@@ -110,6 +130,22 @@ export default function DrawSchedules() {
             <p className="font-sans text-sm font-sans text-muted italic leading-relaxed">
               This was a deliberate choice to break consistency in favor of task fit — a trade-off I documented explicitly for the engineering team.
             </p>
+
+            <div className="relative aspect-[16/10] rounded-2xl mt-10 overflow-hidden bg-stone-100">
+              <Image src="/images/Drawschedules-three-styles-to-edit.jpg" alt="Three interaction patterns explored for draw schedule editing" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
+            <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">Exploring three interaction styles for editing draw schedules</p>
+          </section>
+
+          {/* Wireframes */}
+          <section className="mb-16">
+            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Wireframes</h2>
+            <p className="font-sans text-base text-muted leading-relaxed mb-6">
+              Wireframe explorations for the slide-out panel, iterating on layout, data hierarchy, and editing controls.
+            </p>
+            <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-stone-100">
+              <Image src="/images/Drawschedules-wireframes.jpg" alt="Wireframe iterations for the draw schedule slide-out panel" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+            </div>
           </section>
 
           <section className="mb-20">
