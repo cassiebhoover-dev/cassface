@@ -1,52 +1,38 @@
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 md:py-32 px-6 relative overflow-hidden">
-      {/* Decorative shapes */}
-      <div className="absolute top-8 left-1/4 w-20 h-20 rounded-full bg-goldenrod/10" />
-      <div className="absolute bottom-16 right-1/3 w-14 h-14 rounded-full bg-bubblegum/10" />
+    <section id="contact" className="py-24 md:py-32 px-8">
+      <div className="max-w-6xl mx-auto">
+        <div className="max-w-md mx-auto">
+          <div className="border-l border-foreground/15 pl-8">
+            <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Contact</p>
+            <h2 className="font-serif text-3xl md:text-4xl text-foreground leading-tight mb-4">
+              Let&apos;s connect
+            </h2>
+            <p className="font-sans text-sm text-muted leading-relaxed mb-8">
+              I&apos;m currently open to new opportunities — freelance or full-time.
+            </p>
+          </div>
 
-      <div className="max-w-5xl mx-auto relative z-10">
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="text-sm font-sans text-sunset tracking-widest uppercase mb-4 font-medium">
-            Get in touch
-          </p>
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground leading-tight mb-6">
-            Let&apos;s work together
-          </h2>
-          <p className="font-sans text-lg text-muted leading-relaxed mb-12">
-            I&apos;m currently available for freelance projects and full-time roles.
-          </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+          <div className="pl-8 flex items-center gap-6">
             <a
               href="mailto:cassiebhoover@gmail.com"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-dusk text-white font-sans font-medium text-sm hover:bg-sunset transition-colors duration-300 min-w-[160px]"
+              className="flex items-center gap-2 text-xs font-sans tracking-[0.1em] uppercase text-foreground/60 hover:text-foreground transition-colors duration-200"
             >
-              Email me
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+              </svg>
+              Email
             </a>
             <a
               href="https://www.linkedin.com/in/cassie-hoover-3310141a/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-full border-2 border-dusk text-dusk font-sans font-medium text-sm hover:bg-dusk hover:text-white transition-all duration-300 min-w-[160px]"
+              className="flex items-center gap-2 text-xs font-sans tracking-[0.1em] uppercase text-foreground/60 hover:text-foreground transition-colors duration-200"
             >
-              LinkedIn ↗
-            </a>
-          </div>
-
-          <div className="flex items-center justify-center gap-6">
-            <a
-              href="#"
-              className="text-sm font-sans text-muted hover:text-sunset transition-colors duration-200 border-b border-transparent hover:border-sunset pb-0.5"
-            >
-              Dribbble
-            </a>
-            <span className="text-stone-300">·</span>
-            <a
-              href="#"
-              className="text-sm font-sans text-muted hover:text-sunset transition-colors duration-200 border-b border-transparent hover:border-sunset pb-0.5"
-            >
-              Read.cv
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+              LinkedIn
             </a>
           </div>
         </div>
