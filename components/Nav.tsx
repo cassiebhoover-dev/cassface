@@ -17,14 +17,14 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 bg-background transition-all duration-300 ${
-        scrolled ? 'border-b border-stone-200' : ''
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-background/90 backdrop-blur-md border-b border-stone-200/60' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-sm font-medium tracking-widest uppercase text-foreground hover:text-accent transition-colors duration-200"
+          className="text-sm font-semibold tracking-widest uppercase text-foreground hover:text-sunset transition-colors duration-200"
         >
           Cassie Hoover
         </a>
@@ -49,7 +49,7 @@ export default function Nav() {
           </a>
           <Link
             href="/resume"
-            className="text-sm border border-foreground px-4 py-1.5 rounded-full hover:bg-foreground hover:text-background transition-all duration-200"
+            className="text-sm font-medium border-2 border-dusk text-dusk px-5 py-2 rounded-full hover:bg-dusk hover:text-white transition-all duration-200"
           >
             Resume
           </Link>
