@@ -23,7 +23,7 @@ export default function Monitoring20() {
 
           <div className="border-l border-foreground/15 pl-8 mb-16">
             <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-4">Data Observability · Platform</p>
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground leading-tight mb-6">
+            <h1 className="font-sans text-4xl md:text-5xl text-foreground leading-tight mb-6">
               Monitoring 2.0
             </h1>
             <p className="font-sans text-base text-muted leading-relaxed max-w-2xl">
@@ -55,7 +55,7 @@ export default function Monitoring20() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">01 — Personas</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-6 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-6 leading-tight">
                 Who we designed for
               </h2>
               <div className="space-y-6">
@@ -79,7 +79,7 @@ export default function Monitoring20() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">02 — Team & Role</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Leading a cross-functional team
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed">
@@ -92,7 +92,7 @@ export default function Monitoring20() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">03 — Initial Research</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Starting with the signal we already had
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -124,7 +124,7 @@ export default function Monitoring20() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">04 — Customer Interviews</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Validating with real users
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6">
@@ -138,7 +138,7 @@ export default function Monitoring20() {
                   { count: '2', label: 'Internal', names: 'SE Team, Alev/Jonathan' },
                 ].map((s) => (
                   <div key={s.label} className="bg-white/50 border border-sand/30 rounded-2xl p-5">
-                    <p className="font-serif text-3xl text-foreground mb-1">{s.count}</p>
+                    <p className="font-sans text-3xl text-foreground mb-1">{s.count}</p>
                     <p className="text-xs font-sans font-semibold text-foreground mb-1">{s.label}</p>
                     <p className="text-[11px] font-sans text-muted leading-relaxed">{s.names}</p>
                   </div>
@@ -154,7 +154,7 @@ export default function Monitoring20() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">05 — Synthesis & Prioritization</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Turning 52 insights into a roadmap
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6">
@@ -193,7 +193,7 @@ export default function Monitoring20() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">06 — Design Decisions</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 What we built and why
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6">
@@ -232,7 +232,7 @@ export default function Monitoring20() {
           <section className="mb-24">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">07 — Prototype Validation</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Testing the direction with customers
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">

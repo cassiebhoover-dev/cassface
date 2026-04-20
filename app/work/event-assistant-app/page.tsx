@@ -23,7 +23,7 @@ export default function EventAssistantApp() {
       <div className="max-w-3xl mx-auto" style={{ paddingBottom: 40 }}>
 
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">Mobile App · Events.com</p>
-          <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
+          <h1 className="font-sans text-4xl md:text-6xl text-foreground leading-tight mb-6">
             Event Assistant App
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
@@ -42,7 +42,7 @@ export default function EventAssistantApp() {
                 { stat: '5 Orgs', label: 'Interviewed across event categories from marathons to corporate conferences' },
               ].map((item) => (
                 <div key={item.stat} className="bg-stone-50 rounded-2xl p-6">
-                  <p className="font-serif text-4xl text-foreground mb-2">{item.stat}</p>
+                  <p className="font-sans text-4xl text-foreground mb-2">{item.stat}</p>
                   <p className="text-sm font-sans text-muted leading-relaxed">{item.label}</p>
                 </div>
               ))}
@@ -70,7 +70,7 @@ export default function EventAssistantApp() {
           <div className="border-t border-stone-200 mb-16" />
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Events.com's platform handled ticketing and registration, but check-in — the moment attendees actually arrive — was still painful. Long lines, stressed staff, and day-of volunteers with minimal training created a poor first impression for every event the platform powered.
             </p>
@@ -80,14 +80,14 @@ export default function EventAssistantApp() {
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Existing tools required too much setup and had too steep a learning curve for temporary event-day volunteers. At 8am on event morning, there's no time for onboarding. The app needed to be immediately usable by someone who'd never seen it before — under pressure.
             </p>
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Research</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               I interviewed staff at 5 event organizations across categories — music festivals, marathons, corporate conferences. I also conducted on-site trials at live events and led QA/UAT to test the app in real conditions, not just usability labs.
             </p>
@@ -97,7 +97,7 @@ export default function EventAssistantApp() {
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Key Design Decision: Cut the Attendee Flow</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Key Design Decision: Cut the Attendee Flow</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               The initial prototype was designed for two user types: organizers/volunteers and attendees. Testing revealed the attendee-facing functionality was redundant — attendees wanted to be checked in quickly, not interact with an app themselves.
             </p>
@@ -110,7 +110,7 @@ export default function EventAssistantApp() {
           </section>
 
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
             <ul className="space-y-3">
               {[
                 'Launched on the Google Play Store and adopted across Events.com\'s customer base',

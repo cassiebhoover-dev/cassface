@@ -24,7 +24,7 @@ export default function CoworkPeopleManagement() {
 
           <div className="border-l border-foreground/15 pl-8 mb-16">
             <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-4">AI &middot; People Management &middot; Case Study</p>
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground leading-tight mb-6">
+            <h1 className="font-sans text-4xl md:text-5xl text-foreground leading-tight mb-6">
               Using Claude Cowork to Automate People Management
             </h1>
             <p className="font-sans text-base text-muted leading-relaxed max-w-2xl">
@@ -63,7 +63,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Overview</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 The problem with managing well
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -82,7 +82,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">The Starting Point</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Three designers, three growth paths
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6">
@@ -120,7 +120,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Phase 1</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Building the template
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6">
@@ -174,7 +174,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Phase 2</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Automating the weekly 1:1 brief
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -202,7 +202,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Phase 3</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Giving direct reports a voice
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -224,7 +224,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Phase 4</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Turning the pattern on myself
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -254,7 +254,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Phase 5</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Building a guide for other managers
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -287,7 +287,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">What Changed</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-6 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-6 leading-tight">
                 The impact
               </h2>
               <div className="space-y-6">
@@ -326,7 +326,7 @@ export default function CoworkPeopleManagement() {
           <section className="mb-24">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">Appendix</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-6 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-6 leading-tight">
                 Key prompts that power the workflow
               </h2>
               <div className="space-y-6">

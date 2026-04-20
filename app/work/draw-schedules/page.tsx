@@ -23,7 +23,7 @@ export default function DrawSchedules() {
       <div className="max-w-3xl mx-auto" style={{ paddingBottom: 40 }}>
 
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">FinTech SaaS · nCino</p>
-          <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
+          <h1 className="font-sans text-4xl md:text-6xl text-foreground leading-tight mb-6">
             Draw Schedules
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
@@ -42,7 +42,7 @@ export default function DrawSchedules() {
                 { stat: 'Unified', label: 'Closed a key gap in nCino\'s all-in-one positioning by eliminating external software dependency' },
               ].map((item) => (
                 <div key={item.stat} className="bg-stone-50 rounded-2xl p-6">
-                  <p className="font-serif text-4xl text-foreground mb-2">{item.stat}</p>
+                  <p className="font-sans text-4xl text-foreground mb-2">{item.stat}</p>
                   <p className="text-sm font-sans text-muted leading-relaxed">{item.label}</p>
                 </div>
               ))}
@@ -70,7 +70,7 @@ export default function DrawSchedules() {
           <div className="border-t border-stone-200 mb-16" />
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               nCino's core value proposition is consolidating lending operations into a single platform. But for construction-to-permanent loans, relationship managers were forced out of nCino to handle draw schedules in external software — a gap that undermined the "all-in-one" pitch and introduced reconciliation risk.
             </p>
@@ -80,7 +80,7 @@ export default function DrawSchedules() {
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               When a relationship manager calculated loan price or profitability in nCino, the result was a single percentage applied to the entire amortization schedule. That's not how construction loans work — funds are disbursed in draws over time, making that calculation inaccurate for a core loan type.
             </p>
@@ -90,7 +90,7 @@ export default function DrawSchedules() {
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Research</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               I conducted four 30-minute remote interviews with relationship managers, observing how they currently managed draw schedules outside of nCino. Sessions revealed the frequency of use, the complexity of typical draw structures, and the friction of context-switching between tools mid-workflow.
             </p>
@@ -107,7 +107,7 @@ export default function DrawSchedules() {
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Screen Map</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Screen Map</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-6">
               A comprehensive screen map documenting the full draw schedule experience — from entry points through editing flows.
             </p>
@@ -117,7 +117,7 @@ export default function DrawSchedules() {
           </section>
 
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Design Decision: Modal vs. Slide-out</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Design Decision: Modal vs. Slide-out</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-8">
               I explored two competing interaction patterns and ran A/B testing with users before committing to a direction:
             </p>
@@ -143,7 +143,7 @@ export default function DrawSchedules() {
 
           {/* Wireframes */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Wireframes</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Wireframes</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-6">
               Wireframe explorations for the slide-out panel, iterating on layout, data hierarchy, and editing controls.
             </p>
@@ -153,7 +153,7 @@ export default function DrawSchedules() {
           </section>
 
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               The Draw Schedule feature shipped successfully — giving relationship managers the ability to add single and recurring draws, edit schedule tables, and remove schedules entirely without leaving nCino.
             </p>

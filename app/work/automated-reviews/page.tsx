@@ -23,7 +23,7 @@ export default function AutomatedReviews() {
       <div className="max-w-3xl mx-auto" style={{ paddingBottom: 40 }}>
 
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">FinTech SaaS · nCino</p>
-          <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
+          <h1 className="font-sans text-4xl md:text-6xl text-foreground leading-tight mb-6">
             Automated Reviews
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
@@ -42,7 +42,7 @@ export default function AutomatedReviews() {
                 { stat: '25%', label: 'Increase in feature adoption through workflow improvements' },
               ].map((item) => (
                 <div key={item.stat} className="bg-stone-50 rounded-2xl p-6">
-                  <p className="font-serif text-4xl text-foreground mb-2">{item.stat}</p>
+                  <p className="font-sans text-4xl text-foreground mb-2">{item.stat}</p>
                   <p className="text-sm font-sans text-muted leading-relaxed">{item.label}</p>
                 </div>
               ))}
@@ -72,7 +72,7 @@ export default function AutomatedReviews() {
 
           {/* Business context */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               nCino's platform serves financial institutions managing complex client portfolios. Annual and quarterly relationship reviews — a core compliance and profitability activity — were being handled partly inside nCino and partly through external tools, creating fragmented workflows and lost time for relationship managers.
             </p>
@@ -83,7 +83,7 @@ export default function AutomatedReviews() {
 
           {/* Problem */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Relationship managers were spending significant time on reviews that should have been streamlined. The core tension: automating recommendations fast enough to save time while maintaining the trust of users who were deeply skeptical of anything "automated" in a compliance-adjacent workflow.
             </p>
@@ -94,7 +94,7 @@ export default function AutomatedReviews() {
 
           {/* Research */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Research</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-8">
               I led a multi-phase research effort across internal stakeholders and external customers, combining interviews with formative usability testing on clickable prototypes.
             </p>
@@ -125,7 +125,7 @@ export default function AutomatedReviews() {
 
           {/* Strategic reframe */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Strategic Reframe</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Strategic Reframe</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Early briefs framed this as "automate the review." Research reframed it as "earn trust for automation." Skeptical users needed to understand <em>why</em> a recommendation was made before they'd act on it — which shifted the design from a workflow tool to a transparency and explanation system.
             </p>
@@ -142,7 +142,7 @@ export default function AutomatedReviews() {
 
           {/* Artifacts */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Artifacts</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Artifacts</h2>
             <ul className="space-y-2">
               {[
                 'Information grouping charts mapping content hierarchy across user segments',
@@ -170,7 +170,7 @@ export default function AutomatedReviews() {
 
           {/* Outcomes */}
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Research findings were compiled into a prioritized roadmap for the product team. I presented findings to Customer Success and Sales leadership — directly supporting the sales cycle and feature education for prospects.
             </p>
@@ -187,7 +187,7 @@ export default function AutomatedReviews() {
 
           {/* Final result */}
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Final Design</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Final Design</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-6">
               The shipped relationship monitoring dashboard — surfacing review details, risk insights, spreads, compliance monitoring, and automated recommendations in a single, trust-building view.
             </p>

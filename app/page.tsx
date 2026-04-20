@@ -116,7 +116,7 @@ export default function HomePage() {
           </div>
           <div className="skill-item">
             <div className="skill-item__name">Prototyping / Code</div>
-            <div className="skill-item__level">HTML · React · Framer</div>
+            <div className="skill-item__level">Claude Code · V0 · Figma Make</div>
             <div className="skill-bar"><div className="skill-bar__fill" style={{ width: '72%' }} /></div>
           </div>
         </div>

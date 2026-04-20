@@ -23,7 +23,7 @@ export default function CustomFieldsAndFormulas() {
 
           <div className="border-l border-foreground/15 pl-8 mb-16">
             <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-4">Risk Management &middot; Platform</p>
-            <h1 className="font-serif text-4xl md:text-5xl text-foreground leading-tight mb-6">
+            <h1 className="font-sans text-4xl md:text-5xl text-foreground leading-tight mb-6">
               Custom Fields &amp; Formulas
             </h1>
             <p className="font-sans text-base text-muted leading-relaxed max-w-2xl">
@@ -55,7 +55,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">01 — Personas</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-6 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-6 leading-tight">
                 Who we designed for
               </h2>
               <div className="space-y-6">
@@ -79,7 +79,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">02 — Team &amp; Role</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Sole designer on a two-phase initiative
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed">
@@ -92,7 +92,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">03 — Problem Framing</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Starting with the gap
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -111,7 +111,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">04 — Customer Interviews</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Validating the problem across segments
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -127,7 +127,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">05 — Synthesis &amp; Prioritization</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Turning research into a phased roadmap
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-6">
@@ -157,7 +157,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">06 — Formula Builder Research</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Watching how people actually type
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
@@ -184,7 +184,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">07 — Design Decisions</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 What we built and why
               </h2>
 
@@ -243,7 +243,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">08 — Scalability Decisions</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Built to grow beyond Risk Management
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed">
@@ -256,7 +256,7 @@ export default function CustomFieldsAndFormulas() {
           <section className="mb-24">
             <div className="border-l border-foreground/15 pl-8">
               <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">09 — Prototype Validation</p>
-              <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5 leading-tight">
+              <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Testing the direction with customers
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed">

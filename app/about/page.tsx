@@ -58,12 +58,9 @@ export default function AboutPage() {
 
           <div className="stack-col">
             <div className="stack-col__label">Tools</div>
-            <div className="stack-item is-primary"><div className="stack-dot" />Figma</div>
             <div className="stack-item is-primary"><div className="stack-dot" />Claude / AI</div>
+            <div className="stack-item is-primary"><div className="stack-dot" />Figma</div>
             <div className="stack-item"><div className="stack-dot" />Dovetail</div>
-            <div className="stack-item"><div className="stack-dot" />Framer</div>
-            <div className="stack-item"><div className="stack-dot" />Miro</div>
-            <div className="stack-item"><div className="stack-dot" />HTML / CSS</div>
           </div>
 
           <div className="stack-col">
@@ -71,7 +68,6 @@ export default function AboutPage() {
             <div className="stack-item is-primary"><div className="stack-dot" />Systems thinking</div>
             <div className="stack-item is-primary"><div className="stack-dot" />User research</div>
             <div className="stack-item"><div className="stack-dot" />Double Diamond</div>
-            <div className="stack-item"><div className="stack-dot" />Jobs-to-be-Done</div>
             <div className="stack-item"><div className="stack-dot" />Usability testing</div>
             <div className="stack-item"><div className="stack-dot" />Design sprints</div>
           </div>
@@ -80,10 +76,8 @@ export default function AboutPage() {
             <div className="stack-col__label">Influences</div>
             <div className="stack-item is-primary"><div className="stack-dot" />Don Norman</div>
             <div className="stack-item is-primary"><div className="stack-dot" />Julie Zhuo</div>
-            <div className="stack-item"><div className="stack-dot" />Shape Up (Basecamp)</div>
-            <div className="stack-item"><div className="stack-dot" />Continuous Discovery</div>
-            <div className="stack-item"><div className="stack-dot" />Nielsen Norman</div>
-            <div className="stack-item"><div className="stack-dot" />Lenny&apos;s Podcast</div>
+            <div className="stack-item"><div className="stack-dot" />Malcolm Gladwell</div>
+            <div className="stack-item"><div className="stack-dot" />Martha Stewart</div>
           </div>
 
         </div>

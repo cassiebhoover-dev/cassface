@@ -26,7 +26,7 @@ export default function BrandCustomization() {
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">
             Design Systems · nCino
           </p>
-          <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
+          <h1 className="font-sans text-4xl md:text-6xl text-foreground leading-tight mb-6">
             Brand Customization
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
@@ -62,7 +62,7 @@ export default function BrandCustomization() {
 
           {/* Overview */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Overview</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Overview</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Financial institutions using nCino needed the platform to feel like their own product — not a generic SaaS tool. Brand Customization gave administrators control over visual identity: colors, fonts, logos, and UI theming.
             </p>
@@ -73,7 +73,7 @@ export default function BrandCustomization() {
 
           {/* Process */}
           <section className="mb-16">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Process</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Process</h2>
             <div className="space-y-6">
               <div className="border-l-2 border-accent pl-6">
                 <h3 className="font-sans text-sm font-semibold text-foreground tracking-wide uppercase mb-2">Discovery</h3>
@@ -98,7 +98,7 @@ export default function BrandCustomization() {
 
           {/* Outcomes */}
           <section className="mb-20">
-            <h2 className="font-serif text-2xl md:text-3xl text-foreground mb-5">Outcomes</h2>
+            <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Outcomes</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
               Financial institutions could now apply their brand identity across the nCino platform without engineering involvement. The feature reduced implementation time for new customers and became a key differentiator in sales conversations.
             </p>
