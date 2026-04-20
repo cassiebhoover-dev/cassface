@@ -32,6 +32,9 @@ export const metadata: Metadata = {
   title: 'Cassie Hoover — Product Designer',
   description:
     'Senior Product Designer with 8+ years crafting digital experiences for startups and Fortune 500s.',
+  icons: {
+    icon: '/favicon.svg',
+  },
 }
 
 export default function RootLayout({
