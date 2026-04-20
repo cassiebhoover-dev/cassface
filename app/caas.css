@@ -527,7 +527,7 @@
 ───────────────────────────────────────── */
 .project-card-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   padding: 12px;
 }
@@ -586,8 +586,8 @@
 }
 
 .project-card__info { flex: 1; min-width: 0; }
-.project-card__name { font-size: 13px; font-weight: 500; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.project-card__meta { font-size: 11px; color: var(--color-text-secondary); margin-top: 2px; }
+.project-card__name { font-size: 14px; font-weight: 600; color: var(--color-text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.project-card__meta { font-size: 11px; color: var(--color-text-secondary); margin-top: 3px; }
 
 .project-card__arrow {
   font-size: 13px;

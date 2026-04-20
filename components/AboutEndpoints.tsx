@@ -52,17 +52,6 @@ const ENDPOINTS: Endpoint[] = [
     response: '201 Created · { "alignment": true, "next_step": "kickoff scheduled" }',
   },
   {
-    method: 'PUT',
-    path: '/design-systems',
-    summary: 'Upgrades or rebuilds component libraries and design foundations',
-    params: [
-      { name: 'components_shipped', type: 'integer', desc: '20+ reusable components scaled across multiple products' },
-      { name: 'tokens',             type: 'boolean', desc: 'true — Figma variables, semantic naming conventions' },
-      { name: 'wcag_compliance',    type: 'string',  desc: '"AA" — accessibility built in, not bolted on' },
-    ],
-    response: '200 OK · { "debt_reduced": "30%", "adoption": "cross-product" }',
-  },
-  {
     method: 'GET',
     path: '/known-limitations',
     summary: 'Returns honest self-assessment. No 500 errors here.',
