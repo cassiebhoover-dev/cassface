@@ -27,7 +27,7 @@ const ENDPOINTS: Endpoint[] = [
       { name: 'framework',      type: 'string',  desc: 'Structured design competency framework for transparent career pathing' },
       { name: 'tooling',        type: 'string',  desc: 'AI-powered DesignOps — 1:1 prep, OKR tracking, weekly Slack digests' },
     ],
-    response: '200 OK · { "style": "direct + warm", "availability": "open to new roles" }',
+    response: '200 OK · { "style": "direct + warm", "availability": "open to collaborating" }',
   },
   {
     method: 'GET',

@@ -4,7 +4,7 @@ import AskMeButton from '@/components/AskMeButton'
 
 export const metadata = {
   title: 'CaaS — Cassie as a Service™',
-  description: 'Product Design Manager · 14+ years shipped · Wilmington, NC · Open to new roles.',
+  description: 'Product Design Manager · 14+ years shipped · Wilmington, NC · Open to collaborating.',
 }
 
 export default function HomePage() {
@@ -16,7 +16,7 @@ export default function HomePage() {
         <div>
           <h1 className="page-header__title">Overview</h1>
           <p className="page-header__subtitle">
-            Product Design Manager · Wilmington, NC · Open to new roles
+            Product Design Manager · Wilmington, NC · Open to collaborating
           </p>
         </div>
         <div className="header-actions">

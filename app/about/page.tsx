@@ -32,7 +32,7 @@ export default function AboutPage() {
           <div className="identity-name">Cassie Hoover</div>
           <div className="identity-title">Manager, Product Design · Drata · Wilmington, NC</div>
           <div className="identity-badges">
-            <span className="badge badge--green">status: available</span>
+            <span className="badge badge--green">status: collaborative</span>
             <span className="badge badge--blue">type: player-coach</span>
             <span className="badge badge--purple">auth: portfolio-key</span>
             <span className="badge badge--amber">rate-limit: none</span>
