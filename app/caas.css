@@ -62,49 +62,46 @@
 }
 
 /* ─────────────────────────────────────────
-   TITLEBAR — macOS-style browser chrome
+   MOBILE HEADER — hamburger + logo
+   Hidden on desktop, sticky on mobile
 ───────────────────────────────────────── */
-.titlebar {
-  display: flex;
+.mobile-header {
+  display: none;
   align-items: center;
-  gap: 12px;
-  height: var(--titlebar-height);
-  padding: 0 16px;
+  justify-content: space-between;
+  height: 48px;
+  padding: 0 14px;
   background: var(--color-bg-surface);
   border-bottom: 0.5px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
   flex-shrink: 0;
-  z-index: 10;
 }
 
-.titlebar__dots { display: flex; gap: 6px; }
-.dot {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-}
-.dot--red    { background: var(--color-red); }
-.dot--yellow { background: var(--color-amber); }
-.dot--green  { background: var(--color-green); }
-
-.titlebar__url {
-  flex: 1;
-  background: var(--color-bg-input);
-  border-radius: var(--radius-md);
-  padding: 4px 12px;
-  font-family: var(--caas-font-mono);
-  font-size: 11px;
-  color: var(--color-text-secondary);
-  text-align: center;
-  user-select: none;
-}
-
-.titlebar__hint {
+.mobile-header__hamburger {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 4px;
-  font-size: 11px;
-  color: var(--color-text-tertiary);
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
 }
 
+.mobile-header__logo {
+  font-family: var(--caas-font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  letter-spacing: -0.3px;
+}
+
+/* kbd used in command palette footer */
 .kbd {
   font-family: var(--caas-font-mono);
   font-size: 10px;
@@ -326,7 +323,7 @@
 ───────────────────────────────────────── */
 .ai-panel-overlay {
   position: fixed;
-  top: var(--titlebar-height);
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -1047,23 +1044,8 @@
 .stack-item.is-primary { color: var(--color-text-primary); font-weight: 500; }
 
 /* ─────────────────────────────────────────
-   HAMBURGER BUTTON — hidden on desktop
+   HAMBURGER BARS — shared by mobile-header
 ───────────────────────────────────────── */
-.titlebar__hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 4px;
-  width: 28px;
-  height: 28px;
-  padding: 4px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  border-radius: var(--radius-sm);
-  flex-shrink: 0;
-}
-
 .hamburger-bar {
   display: block;
   width: 16px;
@@ -1101,9 +1083,8 @@
     z-index: 100;
   }
 
-  /* Show hamburger, hide keyboard hint */
-  .titlebar__hamburger { display: flex; }
-  .titlebar__hint { display: none; }
+  /* Show mobile header */
+  .mobile-header { display: flex; }
 
   /* App body — normal block flow */
   .app-body {

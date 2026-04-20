@@ -146,15 +146,10 @@ export default function CaasShell({ children, urlText = 'cassie.design' }: CaasS
   return (
     <div className="app-shell">
 
-      {/* ── TITLEBAR ─────────────────────────────── */}
-      <header className="titlebar">
-        <div className="titlebar__dots">
-          <div className="dot dot--red" />
-          <div className="dot dot--yellow" />
-          <div className="dot dot--green" />
-        </div>
+      {/* ── MOBILE HEADER — hamburger only, hidden on desktop ── */}
+      <div className="mobile-header">
         <button
-          className="titlebar__hamburger"
+          className="mobile-header__hamburger"
           onClick={() => setSidebarOpen(o => !o)}
           aria-label="Toggle navigation"
         >
@@ -162,13 +157,8 @@ export default function CaasShell({ children, urlText = 'cassie.design' }: CaasS
           <span className="hamburger-bar" />
           <span className="hamburger-bar" />
         </button>
-        <div className="titlebar__url">{urlText}</div>
-        <div className="titlebar__hint">
-          <span className="kbd">⌘</span>
-          <span className="kbd">K</span>
-          <span style={{ fontSize: 11, marginLeft: 2 }}>to navigate</span>
-        </div>
-      </header>
+        <span className="mobile-header__logo">CaaS</span>
+      </div>
 
       {/* ── APP BODY ────────────────────────────── */}
       <div className="app-body">
