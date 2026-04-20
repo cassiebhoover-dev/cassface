@@ -1045,3 +1045,192 @@
 
 .stack-item.is-primary .stack-dot { opacity: 1; }
 .stack-item.is-primary { color: var(--color-text-primary); font-weight: 500; }
+
+/* ─────────────────────────────────────────
+   HAMBURGER BUTTON — hidden on desktop
+───────────────────────────────────────── */
+.titlebar__hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.hamburger-bar {
+  display: block;
+  width: 16px;
+  height: 1.5px;
+  background: var(--color-text-secondary);
+  border-radius: 2px;
+}
+
+/* ─────────────────────────────────────────
+   SIDEBAR BACKDROP — mobile only
+───────────────────────────────────────── */
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 190;
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE — mobile (≤ 768px)
+───────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Break the fixed-height shell so pages scroll naturally */
+  .app-shell {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  /* Sticky titlebar */
+  .titlebar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* Show hamburger, hide keyboard hint */
+  .titlebar__hamburger { display: flex; }
+  .titlebar__hint { display: none; }
+
+  /* App body — normal block flow */
+  .app-body {
+    overflow: visible;
+    flex-direction: column;
+  }
+
+  /* Sidebar becomes a fixed off-canvas drawer */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100dvh;
+    width: 220px;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: none;
+  }
+
+  .sidebar.is-open {
+    transform: translateX(0);
+    box-shadow: 6px 0 24px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Main content — full width, tighter padding */
+  .caas-main {
+    overflow-y: visible;
+    padding: 16px 14px 48px;
+  }
+
+  /* Page header — stack on small screens */
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Metrics — 2 columns on mobile */
+  .metrics-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Project card grid — 1 column on mobile */
+  .project-card-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    gap: 8px;
+  }
+
+  /* Project card thumb — shorter on mobile */
+  .project-card__thumb {
+    aspect-ratio: 16 / 6;
+  }
+
+  /* Project rows — slightly tighter */
+  .project-row { padding: 10px 12px; }
+
+  /* Skills — single column */
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-item:nth-child(even) { border-right: none; }
+  .skill-item:nth-last-child(-n+2) { border-bottom: 0.5px solid var(--color-border); }
+  .skill-item:last-child { border-bottom: none; }
+
+  /* Identity card — stack photo + meta */
+  .identity-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* Tech stack — single column */
+  .stack-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stack-col {
+    border-right: none;
+    border-bottom: 0.5px solid var(--color-border);
+    padding: 12px 14px;
+  }
+
+  .stack-col:last-child { border-bottom: none; }
+
+  /* Endpoint table — wrap on small screens */
+  .param-table { display: block; overflow-x: auto; }
+  .param-name { width: 120px; }
+  .param-type { width: 60px; }
+
+  /* Changelog — tighter */
+  .release-content { padding-bottom: 20px; padding-left: 10px; }
+
+  /* Section card header */
+  .section-card__header { padding: 10px 12px; }
+
+  /* Command palette — full width on mobile */
+  .cmd-palette { width: calc(100vw - 24px); }
+
+  /* AI panel — full width on mobile */
+  .ai-panel {
+    width: 100vw;
+    max-width: 100vw;
+    border-left: none;
+    border-top: 0.5px solid var(--color-border-med);
+  }
+
+  .ai-panel-overlay {
+    left: 0;
+  }
+}
+
+/* ─────────────────────────────────────────
+   RESPONSIVE — small tablet (769px – 1024px)
+───────────────────────────────────────── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+  .project-card-grid { grid-template-columns: 1fr 1fr; }
+  .caas-main { padding: 20px 20px 48px; }
+  .stack-grid { grid-template-columns: 1fr; }
+  .stack-col { border-right: none; border-bottom: 0.5px solid var(--color-border); }
+  .stack-col:last-child { border-bottom: none; }
+}

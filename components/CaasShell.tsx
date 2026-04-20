@@ -33,6 +33,7 @@ export default function CaasShell({ children, urlText = 'cassie.design' }: CaasS
   const router = useRouter()
   const [isOpen, setIsOpen] = useState(false)
   const [askMeOpen, setAskMeOpen] = useState(false)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
   const [query, setQuery] = useState('')
   const [selectedIdx, setSelectedIdx] = useState(0)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -87,6 +88,11 @@ export default function CaasShell({ children, urlText = 'cassie.design' }: CaasS
     document.addEventListener('caas:open-cmd', handler)
     return () => document.removeEventListener('caas:open-cmd', handler)
   }, [openPalette])
+
+  // Close sidebar on route change (mobile)
+  useEffect(() => {
+    setSidebarOpen(false)
+  }, [pathname])
 
   // Listen for Ask Me panel open event
   useEffect(() => {
@@ -147,6 +153,15 @@ export default function CaasShell({ children, urlText = 'cassie.design' }: CaasS
           <div className="dot dot--yellow" />
           <div className="dot dot--green" />
         </div>
+        <button
+          className="titlebar__hamburger"
+          onClick={() => setSidebarOpen(o => !o)}
+          aria-label="Toggle navigation"
+        >
+          <span className="hamburger-bar" />
+          <span className="hamburger-bar" />
+          <span className="hamburger-bar" />
+        </button>
         <div className="titlebar__url">{urlText}</div>
         <div className="titlebar__hint">
           <span className="kbd">⌘</span>
@@ -158,8 +173,13 @@ export default function CaasShell({ children, urlText = 'cassie.design' }: CaasS
       {/* ── APP BODY ────────────────────────────── */}
       <div className="app-body">
 
+        {/* ── SIDEBAR BACKDROP (mobile) ─────────── */}
+        {sidebarOpen && (
+          <div className="sidebar-backdrop" onClick={() => setSidebarOpen(false)} />
+        )}
+
         {/* ── SIDEBAR ──────────────────────────── */}
-        <nav className="sidebar">
+        <nav className={`sidebar${sidebarOpen ? ' is-open' : ''}`}>
           <div className="sidebar__logo">
             <div className="logo-mark">CaaS</div>
             <div className="logo-sub">Cassie as a Service™</div>
