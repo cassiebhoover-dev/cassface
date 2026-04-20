@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import CaasShell from '@/components/CaasShell'
 
 export const metadata = {
   title: 'Brand Customization — Cassie Hoover',
@@ -9,18 +8,19 @@ export const metadata = {
 
 export default function BrandCustomization() {
   return (
-    <>
-      <Nav />
-      <main className="pt-32 pb-24 px-6">
-        <div className="max-w-3xl mx-auto">
+    <CaasShell urlText="cassie.design — Brand Customization">
 
-          {/* Back */}
-          <Link
-            href="/#work"
-            className="inline-flex items-center text-sm font-sans text-muted hover:text-foreground transition-colors duration-200 mb-12"
-          >
-            ← Back to work
-          </Link>
+      <div className="page-header">
+        <div>
+          <h1 className="page-header__title">Brand Customization</h1>
+          <p className="page-header__subtitle">Design Systems · nCino</p>
+        </div>
+        <div className="header-actions">
+          <Link href="/work" className="caas-btn">← Case Studies</Link>
+        </div>
+      </div>
+
+      <div className="max-w-3xl mx-auto" style={{ paddingBottom: 40 }}>
 
           {/* Header */}
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">
@@ -123,9 +123,7 @@ export default function BrandCustomization() {
             </Link>
           </div>
 
-        </div>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </CaasShell>
   )
 }

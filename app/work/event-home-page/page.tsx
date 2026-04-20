@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
+import CaasShell from '@/components/CaasShell'
 
 export const metadata = {
   title: 'Event Home Page — Cassie Hoover',
@@ -9,14 +8,19 @@ export const metadata = {
 
 export default function EventHomePage() {
   return (
-    <>
-      <Nav />
-      <main className="pt-32 pb-24 px-6">
-        <div className="max-w-3xl mx-auto">
+    <CaasShell urlText="cassie.design — Event Home Page">
 
-          <Link href="/#work" className="inline-flex items-center text-sm font-sans text-muted hover:text-foreground transition-colors duration-200 mb-12">
-            ← Back to work
-          </Link>
+      <div className="page-header">
+        <div>
+          <h1 className="page-header__title">Event Home Page</h1>
+          <p className="page-header__subtitle">Web Platform · Events.com</p>
+        </div>
+        <div className="header-actions">
+          <Link href="/work" className="caas-btn">← Case Studies</Link>
+        </div>
+      </div>
+
+      <div className="max-w-3xl mx-auto" style={{ paddingBottom: 40 }}>
 
           <p className="text-xs font-sans text-accent tracking-widest uppercase mb-4">Web Platform · Events.com</p>
           <h1 className="font-serif text-4xl md:text-6xl text-foreground leading-tight mb-6">
@@ -135,9 +139,7 @@ export default function EventHomePage() {
             <Link href="/work/event-assistant-app" className="text-sm font-sans text-foreground border-b border-transparent hover:border-foreground transition-all duration-200">Event Assistant App →</Link>
           </div>
 
-        </div>
-      </main>
-      <Footer />
-    </>
+      </div>
+    </CaasShell>
   )
 }

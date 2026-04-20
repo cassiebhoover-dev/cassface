@@ -111,7 +111,7 @@ export default function AskMe({ embedded = false }: { embedded?: boolean }) {
                 setIsOpen(true)
                 sendMessage(q)
               }}
-              className="text-xs font-sans text-foreground/60 bg-warm/50 border border-sand/30 px-3 py-1.5 rounded-full hover:bg-warm hover:text-foreground transition-all duration-200"
+              className="text-xs font-sans text-purple-700 bg-purple-50 border border-purple-200 px-3 py-1.5 rounded-full hover:bg-purple-100 hover:text-purple-900 transition-all duration-200"
             >
               {q}
             </button>

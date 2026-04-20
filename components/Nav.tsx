@@ -16,7 +16,7 @@ export default function Nav() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const isHome = pathname === '/'
+  const isWork = pathname === '/work' || pathname.startsWith('/work/')
   const isAbout = pathname === '/about'
 
   return (
@@ -34,9 +34,9 @@ export default function Nav() {
         </Link>
         <div className="flex items-center gap-8">
           <Link
-            href="/"
+            href="/work"
             className={`text-xs font-sans tracking-[0.15em] uppercase transition-colors duration-200 ${
-              isHome ? 'text-foreground underline underline-offset-4 decoration-accent' : 'text-foreground/50 hover:text-foreground'
+              isWork ? 'text-foreground underline underline-offset-4 decoration-accent' : 'text-foreground/50 hover:text-foreground'
             }`}
           >
             Portfolio
