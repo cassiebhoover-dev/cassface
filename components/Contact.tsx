@@ -9,7 +9,7 @@ export default function Contact() {
               Let&apos;s connect
             </h2>
             <p className="font-sans text-sm text-muted leading-relaxed mb-8">
-              I&apos;m currently open to new opportunities — freelance or full-time.
+              I&apos;m always open to collaborating — reach out and let&apos;s talk.
             </p>
           </div>
 
