@@ -27,7 +27,7 @@ export default function EventHomePage() {
             Event Home Page
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
-            Replacing a confusing post-creation redirect with a guided onboarding hub — improving new user setup completion and giving experienced organizers a live event dashboard.
+            Replacing a confusing post-creation redirect with a guided onboarding hub, improving new user setup completion and giving experienced organizers a live event dashboard.
           </p>
 
           <div className="border-t border-stone-200 mb-16" />
@@ -39,7 +39,7 @@ export default function EventHomePage() {
               {[
                 { stat: '100M+', label: 'Revenue supported through product features designed at Events.com' },
                 { stat: '2× More', label: 'User engagement with widget-based layout vs. previous side navigation in testing' },
-                { stat: '10 Users', label: 'Tested across two rounds — new and experienced organizers both validated the redesign' },
+                { stat: '10 Users', label: 'Tested across two rounds. New and experienced organizers both validated the redesign.' },
               ].map((item) => (
                 <div key={item.stat} className="bg-stone-50 rounded-2xl p-6">
                   <p className="font-sans text-4xl text-foreground mb-2">{item.stat}</p>
@@ -72,7 +72,7 @@ export default function EventHomePage() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              Events.com scaled from $0 to $100M in revenue during my tenure, and self-service user growth was a core part of that trajectory. But new self-service organizers were dropping off during setup — creating support burden and leaving revenue on the table from events that never launched.
+              Events.com scaled from $0 to $100M in revenue during my tenure, and self-service user growth was a core part of that trajectory. But new self-service organizers were dropping off during setup, creating support burden and leaving revenue on the table from events that never launched.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               Improving the first-hour experience for new organizers was directly tied to activation rate and downstream revenue.
@@ -82,7 +82,7 @@ export default function EventHomePage() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              After creating an event, users were automatically sent to the event edit page — a dense interface with no guidance on what to do next. New users had no way to distinguish required setup from optional configuration, and no sense of progress or completion.
+              After creating an event, users were automatically sent to the event edit page, a dense interface with no guidance on what to do next. New users had no way to distinguish required setup from optional configuration, and no sense of progress or completion.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               The result: drop-off during setup, a spike in support tickets, and organizers launching incomplete events that performed poorly.
@@ -92,14 +92,14 @@ export default function EventHomePage() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              I conducted user testing with 10 new organizers, observing where they got stuck and what decisions they couldn't make without guidance. Key insight: users didn't need more information — they needed a clear sequence and a sense of what "done" looked like.
+              I conducted user testing with 10 new organizers, observing where they got stuck and what decisions they couldn't make without guidance. Key insight: users didn't need more information. They needed a clear sequence and a sense of what "done" looked like.
             </p>
           </section>
 
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Design Solution</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-6">
-              The Event Home Page replaced the edit-first experience with a checklist-based hub. Each task appeared as an interactive widget with three states — keeping the mental model simple and progress visible.
+              The Event Home Page replaced the edit-first experience with a checklist-based hub. Each task appeared as an interactive widget with three states, keeping the mental model simple and progress visible.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               {[
@@ -114,7 +114,7 @@ export default function EventHomePage() {
               ))}
             </div>
             <p className="font-sans text-base text-muted leading-relaxed">
-              A live dashboard panel alongside the checklist showed days until the event, ticketing launch date, and tickets sold — giving experienced organizers the at-a-glance snapshot they needed without overwhelming new users.
+              A live dashboard panel alongside the checklist showed days until the event, ticketing launch date, and tickets sold, giving experienced organizers the at-a-glance snapshot they needed without overwhelming new users.
             </p>
           </section>
 

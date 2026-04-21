@@ -27,7 +27,7 @@ export default function DrawSchedules() {
             Draw Schedules
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
-            Bringing construction loan draw schedule management inside nCino — eliminating reliance on external software and enabling accurate price optimization for relationship managers.
+            Bringing construction loan draw schedule management inside nCino, eliminating reliance on external software and enabling accurate price optimization for relationship managers.
           </p>
 
           <div className="border-t border-stone-200 mb-16" />
@@ -50,7 +50,7 @@ export default function DrawSchedules() {
           </section>
 
           <div className="relative aspect-video rounded-2xl mb-16 overflow-hidden bg-stone-100">
-            <Image src="/images/DrawSchedules-banner.jpg" alt="Draw Schedules — construction loan draw management" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
+            <Image src="/images/DrawSchedules-banner.jpg" alt="Draw Schedules, construction loan draw management" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" priority />
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
@@ -72,7 +72,7 @@ export default function DrawSchedules() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              nCino's core value proposition is consolidating lending operations into a single platform. But for construction-to-permanent loans, relationship managers were forced out of nCino to handle draw schedules in external software — a gap that undermined the "all-in-one" pitch and introduced reconciliation risk.
+              nCino's core value proposition is consolidating lending operations into a single platform. But for construction-to-permanent loans, relationship managers were forced out of nCino to handle draw schedules in external software, a gap that undermined the "all-in-one" pitch and introduced reconciliation risk.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               This wasn't a nice-to-have. For banks with significant construction loan portfolios, it was a blocker.
@@ -82,7 +82,7 @@ export default function DrawSchedules() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              When a relationship manager calculated loan price or profitability in nCino, the result was a single percentage applied to the entire amortization schedule. That's not how construction loans work — funds are disbursed in draws over time, making that calculation inaccurate for a core loan type.
+              When a relationship manager calculated loan price or profitability in nCino, the result was a single percentage applied to the entire amortization schedule. That's not how construction loans work. Funds are disbursed in draws over time, making that calculation inaccurate for a core loan type.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               The design challenge: integrate draw schedule editing into an already complex pricing workflow without adding cognitive load or disrupting existing patterns.
@@ -96,12 +96,12 @@ export default function DrawSchedules() {
             </p>
 
             <div className="relative aspect-[16/10] rounded-2xl mt-10 overflow-hidden bg-stone-100">
-              <Image src="/images/Drawschedules-research.jpg" alt="Research synthesis — interview insights and workflow mapping" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+              <Image src="/images/Drawschedules-research.jpg" alt="Research synthesis, interview insights and workflow mapping" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
             </div>
             <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">Research synthesis from relationship manager interviews</p>
 
             <div className="relative aspect-[16/9] rounded-2xl mt-6 overflow-hidden bg-stone-100">
-              <Image src="/images/DrawSchedules-userjourney.jpg" alt="User journey map — draw schedule workflow across touchpoints" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
+              <Image src="/images/DrawSchedules-userjourney.jpg" alt="User journey map, draw schedule workflow across touchpoints" fill className="object-cover" sizes="(max-width: 768px) 100vw, 768px" />
             </div>
             <p className="text-xs font-sans text-muted mt-3 opacity-60 text-center">User journey mapping for the draw schedule workflow</p>
           </section>
@@ -109,10 +109,10 @@ export default function DrawSchedules() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Screen Map</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-6">
-              A comprehensive screen map documenting the full draw schedule experience — from entry points through editing flows.
+              A comprehensive screen map documenting the full draw schedule experience, from entry points through editing flows.
             </p>
             <div className="relative rounded-2xl overflow-hidden bg-stone-100 border border-stone-200">
-              <Image src="/images/Drawschedule-ScreenMap.jpg" alt="Screen map — complete draw schedule feature flow" width={1200} height={2000} className="w-full h-auto" sizes="(max-width: 768px) 100vw, 768px" />
+              <Image src="/images/Drawschedule-ScreenMap.jpg" alt="Screen map, complete draw schedule feature flow" width={1200} height={2000} className="w-full h-auto" sizes="(max-width: 768px) 100vw, 768px" />
             </div>
           </section>
 
@@ -123,16 +123,16 @@ export default function DrawSchedules() {
             </p>
             <div className="space-y-6 mb-6">
               <div className="border-l-2 border-stone-200 pl-6">
-                <h3 className="font-sans text-sm font-semibold text-foreground tracking-wide uppercase mb-2">Option A — Modal</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">Consistent with existing Rate and Payment patterns. Familiar, but blocked the loan view during editing — creating friction for users who needed to reference other loan data mid-task.</p>
+                <h3 className="font-sans text-sm font-semibold text-foreground tracking-wide uppercase mb-2">Option A: Modal</h3>
+                <p className="font-sans text-sm text-muted leading-relaxed">Consistent with existing Rate and Payment patterns. Familiar, but blocked the loan view during editing, creating friction for users who needed to reference other loan data mid-task.</p>
               </div>
               <div className="border-l-2 border-accent pl-6">
-                <h3 className="font-sans text-sm font-semibold text-foreground tracking-wide uppercase mb-2">Option B — Slide-out Panel (Selected)</h3>
-                <p className="font-sans text-sm text-muted leading-relaxed">Kept the loan view visible while editing the draw schedule. Users strongly preferred this — they needed to make quick back-and-forth adjustments while referencing other loan data. The right answer required departing from an existing pattern.</p>
+                <h3 className="font-sans text-sm font-semibold text-foreground tracking-wide uppercase mb-2">Option B: Slide-out Panel (Selected)</h3>
+                <p className="font-sans text-sm text-muted leading-relaxed">Kept the loan view visible while editing the draw schedule. Users strongly preferred this. They needed to make quick back-and-forth adjustments while referencing other loan data. The right answer required departing from an existing pattern.</p>
               </div>
             </div>
             <p className="font-sans text-sm font-sans text-muted italic leading-relaxed">
-              This was a deliberate choice to break consistency in favor of task fit — a trade-off I documented explicitly for the engineering team.
+              This was a deliberate choice to break consistency in favor of task fit, a trade-off I documented explicitly for the engineering team.
             </p>
 
             <div className="relative aspect-[16/10] rounded-2xl mt-10 overflow-hidden bg-stone-100">
@@ -155,7 +155,7 @@ export default function DrawSchedules() {
           <section className="mb-20">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Outcomes & Impact</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              The Draw Schedule feature shipped successfully — giving relationship managers the ability to add single and recurring draws, edit schedule tables, and remove schedules entirely without leaving nCino.
+              The Draw Schedule feature shipped successfully, giving relationship managers the ability to add single and recurring draws, edit schedule tables, and remove schedules entirely without leaving nCino.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               Next phase: Draw Templates for frequently-used schedule structures, reducing setup time for common loan types.

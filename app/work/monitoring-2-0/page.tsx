@@ -27,7 +27,7 @@ export default function Monitoring20() {
               Monitoring 2.0
             </h1>
             <p className="font-sans text-base text-muted leading-relaxed max-w-2xl">
-              Rethinking how compliance managers monitor data quality tests — making failures easier to triage, delegate, and resolve across the organization.
+              Rethinking how compliance managers monitor data quality tests, making failures easier to triage, delegate, and resolve across the organization.
             </p>
           </div>
 
@@ -54,21 +54,21 @@ export default function Monitoring20() {
           {/* Personas */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">01 — Personas</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">01 · Personas</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-6 leading-tight">
                 Who we designed for
               </h2>
               <div className="space-y-6">
                 <div>
-                  <h3 className="font-sans text-sm font-semibold text-foreground mb-2">Carl — Compliance Manager <span className="text-muted font-normal">(primary)</span></h3>
+                  <h3 className="font-sans text-sm font-semibold text-foreground mb-2">Carl, Compliance Manager <span className="text-muted font-normal">(primary)</span></h3>
                   <p className="font-sans text-sm text-muted leading-relaxed">
-                    Carl monitors data quality tests and addresses failures — either fixing them himself or delegating to the right person. He&apos;s the day-to-day user of the monitoring surface and the one most affected by noise, false positives, and unclear ownership.
+                    Carl monitors data quality tests and addresses failures, either fixing them himself or delegating to the right person. He&apos;s the day-to-day user of the monitoring surface and the one most affected by noise, false positives, and unclear ownership.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-sans text-sm font-semibold text-foreground mb-2">Dean — DevOps Engineer <span className="text-muted font-normal">(secondary)</span></h3>
+                  <h3 className="font-sans text-sm font-semibold text-foreground mb-2">Dean, DevOps Engineer <span className="text-muted font-normal">(secondary)</span></h3>
                   <p className="font-sans text-sm text-muted leading-relaxed">
-                    Dean typically manages infrastructure tests and gets pulled in when errors occur — often because of connection issues. He needs fast visibility into what broke and why, without wading through noise meant for compliance.
+                    Dean typically manages infrastructure tests and gets pulled in when errors occur, often because of connection issues. He needs fast visibility into what broke and why, without wading through noise meant for compliance.
                   </p>
                 </div>
               </div>
@@ -78,7 +78,7 @@ export default function Monitoring20() {
           {/* Team and Role */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">02 — Team & Role</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">02 · Team & Role</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Leading a cross-functional team
               </h2>
@@ -91,18 +91,18 @@ export default function Monitoring20() {
           {/* Initial Research */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">03 — Initial Research</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">03 · Initial Research</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Starting with the signal we already had
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
-                I started by reviewing all customer feedback in Productboard tagged to monitoring and tests — surfacing recurring frustrations and patterns that had been accumulating over time.
+                I started by reviewing all customer feedback in Productboard tagged to monitoring and tests, surfacing recurring frustrations and patterns that had been accumulating over time.
               </p>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
                 Next, I facilitated a Rose-Bud-Thorn workshop with a cross-functional group that included directors, customer success managers, product managers, engineers, and the head of product. I intentionally invited both team members with deep product expertise and newer employees who could bring a fresh perspective. Customer success managers in particular brought valuable insights from direct user interactions.
               </p>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
-                Combining workshop outcomes with the Productboard feedback, I identified recurring themes and developed an opportunity-solution tree from our initial problem statement — giving the team a shared map of what was worth pursuing and why. This process surfaced four core problem areas:
+                Combining workshop outcomes with the Productboard feedback, I identified recurring themes and developed an opportunity-solution tree from our initial problem statement, giving the team a shared map of what was worth pursuing and why. This process surfaced four core problem areas:
               </p>
               <ul className="space-y-3 ml-1">
                 {[
@@ -123,7 +123,7 @@ export default function Monitoring20() {
           {/* Customer Interviews */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">04 — Customer Interviews</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">04 · Customer Interviews</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Validating with real users
               </h2>
@@ -145,7 +145,7 @@ export default function Monitoring20() {
                 ))}
               </div>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                All sessions were recorded and synthesized in Dovetail, resulting in 200+ highlighted quotes organized across 52 distinct insights — grouped by theme and then triaged into actionable buckets.
+                All sessions were recorded and synthesized in Dovetail, resulting in 200+ highlighted quotes organized across 52 distinct insights, grouped by theme and then triaged into actionable buckets.
               </p>
             </div>
           </section>
@@ -153,7 +153,7 @@ export default function Monitoring20() {
           {/* Synthesis & Prioritization */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">05 — Synthesis & Prioritization</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">05 · Synthesis & Prioritization</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Turning 52 insights into a roadmap
               </h2>
@@ -192,7 +192,7 @@ export default function Monitoring20() {
           {/* Design Decisions */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">06 — Design Decisions</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">06 · Design Decisions</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 What we built and why
               </h2>
@@ -209,7 +209,7 @@ export default function Monitoring20() {
                 <div>
                   <h3 className="font-sans text-sm font-semibold text-foreground mb-2">Detail pages replacing drawers</h3>
                   <p className="font-sans text-sm text-muted leading-relaxed">
-                    The drawer pattern was limiting — users would open it, lose context, and have to navigate elsewhere to take action. Full detail pages gave each test the space it needed and kept users oriented within the product.
+                    The drawer pattern was limiting. Users would open it, lose context, and have to navigate elsewhere to take action. Full detail pages gave each test the space it needed and kept users oriented within the product.
                   </p>
                 </div>
                 <div>
@@ -231,15 +231,15 @@ export default function Monitoring20() {
           {/* Prototype Validation */}
           <section className="mb-24">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">07 — Prototype Validation</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">07 · Prototype Validation</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Testing the direction with customers
               </h2>
               <p className="font-sans text-sm text-muted leading-relaxed mb-4">
-                We walked the prototype back through customers across all segments. The response validated the direction — users described the changes as streamlining their workflow and making the experience significantly clearer. The tab structure, detail pages, and table view were called out positively across multiple sessions.
+                We walked the prototype back through customers across all segments. The response validated the direction. Users described the changes as streamlining their workflow and making the experience significantly clearer. The tab structure, detail pages, and table view were called out positively across multiple sessions.
               </p>
               <p className="font-sans text-sm text-muted leading-relaxed">
-                One particularly strong signal came from a conflicting insight that emerged mid-research: two users had genuinely opposing needs around connection visibility. Navigating that tension — and landing on a solution that satisfied both without compromising either — became one of the most useful design challenges of the project.
+                One particularly strong signal came from a conflicting insight that emerged mid-research: two users had genuinely opposing needs around connection visibility. Navigating that tension, and landing on a solution that satisfied both without compromising either, became one of the most useful design challenges of the project.
               </p>
             </div>
           </section>

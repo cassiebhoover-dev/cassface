@@ -30,7 +30,7 @@ export default function BrandCustomization() {
             Brand Customization
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
-            Giving financial institutions the tools to customize their nCino experience — from color palettes to typography — to reflect their own brand identity.
+            Giving financial institutions the tools to customize their nCino experience, from color palettes to typography, to reflect their own brand identity.
           </p>
 
           <div className="border-t border-stone-200 mb-16" />
@@ -64,7 +64,7 @@ export default function BrandCustomization() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Overview</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              Financial institutions using nCino needed the platform to feel like their own product — not a generic SaaS tool. Brand Customization gave administrators control over visual identity: colors, fonts, logos, and UI theming.
+              Financial institutions using nCino needed the platform to feel like their own product, not a generic SaaS tool. Brand Customization gave administrators control over visual identity: colors, fonts, logos, and UI theming.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               The challenge was building a system flexible enough to accommodate diverse brand languages while maintaining accessibility standards and design consistency across the platform.
@@ -103,7 +103,7 @@ export default function BrandCustomization() {
               Financial institutions could now apply their brand identity across the nCino platform without engineering involvement. The feature reduced implementation time for new customers and became a key differentiator in sales conversations.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
-              The design token system built for this project also informed nCino's broader design system — making it easier for product teams to ship accessible, on-brand UI going forward.
+              The design token system built for this project also informed nCino's broader design system, making it easier for product teams to ship accessible, on-brand UI going forward.
             </p>
           </section>
 

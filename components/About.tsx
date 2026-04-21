@@ -34,7 +34,7 @@ export default function About() {
 
               <div className="space-y-4 font-sans text-sm text-muted leading-relaxed">
                 <p>
-                  I&apos;m a Senior Product Designer & Design Lead focused on the intersection of user research, systems thinking, and shipping products that actually make a difference. I believe great design is invisible — it just works.
+                  I&apos;m a Senior Product Designer & Design Lead focused on the intersection of user research, systems thinking, and shipping products that actually make a difference. I believe great design is invisible. It just works.
                 </p>
                 <p>
                   Over the past 8+ years, I&apos;ve partnered with product managers, engineers, and executives to take ideas from whiteboard sketches to polished, scalable products. Whether I&apos;m running discovery research or sweating the details of a component library, I care deeply about the craft.

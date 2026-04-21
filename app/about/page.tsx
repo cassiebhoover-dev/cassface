@@ -39,7 +39,7 @@ export default function AboutPage() {
           </div>
           <p className="identity-desc">
             A product design API with 14+ years of uptime. Specializes in turning ambiguous problems
-            into shipped software — for startups scaling fast and enterprises moving slow. Accepts
+            into shipped software, for startups scaling fast and enterprises moving slow. Accepts
             requests in Figma, Notion, and plain English.
           </p>
         </div>

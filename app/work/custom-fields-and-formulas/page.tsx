@@ -54,7 +54,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Personas */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">01 — Personas</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">01 · Personas</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-6 leading-tight">
                 Who we designed for
               </h2>
@@ -78,7 +78,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Team and Role */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">02 — Team &amp; Role</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">02 · Team &amp; Role</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Sole designer on a two-phase initiative
               </h2>
@@ -91,7 +91,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Problem Framing */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">03 — Problem Framing</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">03 · Problem Framing</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Starting with the gap
               </h2>
@@ -110,7 +110,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Customer Interviews */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">04 — Customer Interviews</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">04 · Customer Interviews</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Validating the problem across segments
               </h2>
@@ -126,7 +126,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Synthesis & Prioritization */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">05 — Synthesis &amp; Prioritization</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">05 · Synthesis &amp; Prioritization</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Turning research into a phased roadmap
               </h2>
@@ -156,7 +156,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Formula Builder Research */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">06 — Formula Builder Research</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">06 · Formula Builder Research</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Watching how people actually type
               </h2>
@@ -183,7 +183,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Design Decisions */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">07 — Design Decisions</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">07 · Design Decisions</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 What we built and why
               </h2>
@@ -242,7 +242,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Scalability Decisions */}
           <section className="mb-20">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">08 — Scalability Decisions</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">08 · Scalability Decisions</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Built to grow beyond Risk Management
               </h2>
@@ -255,7 +255,7 @@ export default function CustomFieldsAndFormulas() {
           {/* Prototype Validation */}
           <section className="mb-24">
             <div className="border-l border-foreground/15 pl-8">
-              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">09 — Prototype Validation</p>
+              <p className="text-xs font-sans tracking-[0.2em] uppercase text-muted mb-3">09 · Prototype Validation</p>
               <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5 leading-tight">
                 Testing the direction with customers
               </h2>

@@ -27,7 +27,7 @@ export default function EventAssistantApp() {
             Event Assistant App
           </h1>
           <p className="text-lg font-sans text-muted leading-relaxed mb-16 max-w-2xl">
-            A mobile check-in app built for speed, minimal training, and the reality of event day — launched on Google Play and featured in TechCrunch.
+            A mobile check-in app built for speed, minimal training, and the reality of event day. Launched on Google Play and featured in TechCrunch.
           </p>
 
           <div className="border-t border-stone-200 mb-16" />
@@ -72,7 +72,7 @@ export default function EventAssistantApp() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Business Context</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              Events.com's platform handled ticketing and registration, but check-in — the moment attendees actually arrive — was still painful. Long lines, stressed staff, and day-of volunteers with minimal training created a poor first impression for every event the platform powered.
+              Events.com's platform handled ticketing and registration, but check-in, the moment attendees actually arrive, was still painful. Long lines, stressed staff, and day-of volunteers with minimal training created a poor first impression for every event the platform powered.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
               A first-party check-in app extended Events.com's value from pre-event to day-of, and created a new competitive moat against point-solution check-in tools.
@@ -82,27 +82,27 @@ export default function EventAssistantApp() {
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">The Problem</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              Existing tools required too much setup and had too steep a learning curve for temporary event-day volunteers. At 8am on event morning, there's no time for onboarding. The app needed to be immediately usable by someone who'd never seen it before — under pressure.
+              Existing tools required too much setup and had too steep a learning curve for temporary event-day volunteers. At 8am on event morning, there's no time for onboarding. The app needed to be immediately usable by someone who'd never seen it before, under pressure.
             </p>
           </section>
 
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Research</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              I interviewed staff at 5 event organizations across categories — music festivals, marathons, corporate conferences. I also conducted on-site trials at live events and led QA/UAT to test the app in real conditions, not just usability labs.
+              I interviewed staff at 5 event organizations across categories: music festivals, marathons, corporate conferences. I also conducted on-site trials at live events and led QA/UAT to test the app in real conditions, not just usability labs.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed">
-              Key insight: volunteers didn't want features — they wanted confidence. The app needed to make the right action obvious at every step.
+              Key insight: volunteers didn't want features. They wanted confidence. The app needed to make the right action obvious at every step.
             </p>
           </section>
 
           <section className="mb-16">
             <h2 className="font-sans text-2xl md:text-3xl text-foreground mb-5">Key Design Decision: Cut the Attendee Flow</h2>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              The initial prototype was designed for two user types: organizers/volunteers and attendees. Testing revealed the attendee-facing functionality was redundant — attendees wanted to be checked in quickly, not interact with an app themselves.
+              The initial prototype was designed for two user types: organizers/volunteers and attendees. Testing revealed the attendee-facing functionality was redundant. Attendees wanted to be checked in quickly, not interact with an app themselves.
             </p>
             <p className="font-sans text-base text-muted leading-relaxed mb-4">
-              I cut the screen count in half by removing the attendee flow entirely. This is a case where the right answer was doing less — and research made that clear rather than gut instinct.
+              I cut the screen count in half by removing the attendee flow entirely. This is a case where the right answer was doing less, and research made that clear rather than gut instinct.
             </p>
             <p className="font-sans text-sm text-muted italic leading-relaxed">
               I ran a second round of validation testing after the cut to confirm the simplified experience was faster and less error-prone under simulated event conditions.

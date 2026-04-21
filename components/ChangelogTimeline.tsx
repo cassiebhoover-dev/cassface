@@ -34,7 +34,7 @@ const RELEASES: Release[] = [
     notes: [
       { type: 'feat', text: 'Cross-functional design team leadership across multiple product pillars with full roadmap visibility' },
       { type: 'feat', text: 'Player-coach model: active IC contribution alongside people management and direct report mentorship' },
-      { type: 'sys',  text: 'Architected AI-powered DesignOps workflow in Claude — automates 1:1 prep, OKR tracking, and weekly Slack coaching digests' },
+      { type: 'sys',  text: 'Architected AI-powered DesignOps workflow in Claude: automates 1:1 prep, OKR tracking, and weekly Slack coaching digests' },
       { type: 'sys',  text: 'Mapped team growth to structured design competency framework for transparent, data-informed career pathing' },
       { type: 'feat', text: 'Championing shift from static Figma deliverables to high-fidelity interactive prototypes built with AI tooling' },
     ],
@@ -110,7 +110,7 @@ const RELEASES: Release[] = [
     date: '2010',
     noPaddingBottom: true,
     notes: [
-      { type: 'edu', text: 'BFA, Magna Cum Laude — first stable release of Cassie shipped to production' },
+      { type: 'edu', text: 'BFA, Magna Cum Laude. First stable release of Cassie shipped to production.' },
     ],
   },
 ]
