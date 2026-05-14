@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import CaasShell from '@/components/CaasShell'
 
 export const metadata = {
@@ -44,6 +45,18 @@ export default function DesignProcessPrototyping() {
               <p className="text-sm font-sans text-foreground">{m.value}</p>
             </div>
           ))}
+        </div>
+
+        {/* Hero image */}
+        <div className="relative aspect-video rounded-2xl mb-20 overflow-hidden border border-sand/30">
+          <Image
+            src="/images/design-process-hero.svg"
+            alt="Design Process and Prototyping workflow tool"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 768px"
+            priority
+          />
         </div>
 
         {/* The Problem */}
