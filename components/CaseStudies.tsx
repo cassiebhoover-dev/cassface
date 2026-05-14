@@ -36,7 +36,7 @@ const caseStudies: CaseStudy[] = [
     tag: 'AI · Internal Tool',
     title: 'When AI Made Me Slow Down',
     description: 'Building a gated AI workflow tool that refuses to let you skip the thinking — and what it revealed about how I design.',
-    image: '',
+    image: '/images/design-process-hero.svg',
   },
   {
     slug: 'automated-reviews',
