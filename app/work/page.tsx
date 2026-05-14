@@ -37,6 +37,15 @@ const PROJECTS = [
     placeholderColor: null,
   },
   {
+    slug: 'design-process-prototyping',
+    name: 'When AI Made Me Slow Down',
+    meta: 'Internal Tool · Design Team · AI',
+    image: null,
+    placeholderBg: 'linear-gradient(135deg, #EEF3FF 0%, #C7D4F8 100%)',
+    placeholderIcon: '◈',
+    placeholderColor: '#3B5BD5',
+  },
+  {
     slug: 'automated-reviews',
     name: 'Automated Reviews',
     meta: 'nCino · FinTech SaaS',
@@ -73,7 +82,7 @@ export default function WorkPage() {
       <div className="section-card">
         <div className="section-card__header">
           <span className="section-card__title">All deployments</span>
-          <span className="section-version">5 projects</span>
+          <span className="section-version">6 projects</span>
         </div>
 
         <div className="project-card-grid">
