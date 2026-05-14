@@ -32,6 +32,13 @@ const caseStudies: CaseStudy[] = [
     image: '/images/People-Managment.png',
   },
   {
+    slug: 'design-process-prototyping',
+    tag: 'AI · Internal Tool',
+    title: 'When AI Made Me Slow Down',
+    description: 'Building a gated AI workflow tool that refuses to let you skip the thinking — and what it revealed about how I design.',
+    image: '',
+  },
+  {
     slug: 'automated-reviews',
     tag: 'FinTech SaaS · nCino',
     title: 'Automated Reviews',
